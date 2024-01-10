@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="p-4 lg:p-16">
+    <main className="py-4 px-2 lg:p-16">
       <div className="flex justify-center">
         <Image src={icon} className="h-24 w-24" alt="logo" />
       </div>
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-center mt-16">
-        <div className="px-4 lg:px-20 w-full grid grid-cols-1 lg:grid-cols-2 gap-y-16">
+        <div className="px-2 lg:px-20 w-full grid grid-cols-1 lg:grid-cols-2 gap-y-16">
           {posts.length ? (
             <>
               <Post post={posts[0]} />
@@ -50,7 +50,7 @@ export default function Home() {
           )}
         </div>
       </div>
-      <div className="flex mt-16 justify-center px-4 lg:px-24">
+      <div className="flex mt-16 justify-center px-22lg:px-24">
         {posts.length ? <HighlightParagraph id={posts[0].id} /> : <></>}
       </div>
       <div className="hidden lg:flex justify-center mt-16">
