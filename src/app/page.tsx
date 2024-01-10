@@ -50,7 +50,7 @@ export default function Home() {
           )}
         </div>
       </div>
-      <div className="flex mt-16 justify-center px-22lg:px-24">
+      <div className="flex mt-16 justify-center px-2 lg:px-24">
         {posts.length ? <HighlightParagraph id={posts[0].id} /> : <></>}
       </div>
       <div className="hidden lg:flex justify-center mt-16">
