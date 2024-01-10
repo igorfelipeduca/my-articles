@@ -20,22 +20,26 @@ export default function HighlightParagraph({ id }: { id: number }) {
 
   return (
     <div className="space-y-8">
-      <div className="text-4xl font-medium w-full text-zinc-500">
+      <div className="text-xl lg:text-4xl font-medium w-full text-zinc-500">
         {post ? firstParagraph(post?.body_html) : ""}
       </div>
 
       <div className="flex w-full justify-between">
         <div className="flex items-center gap-x-4">
-          <div className="h-px w-24 bg-zinc-400" />
-          <h3 className="font-medium text-zinc-400 text-xl">{post?.title}</h3>
+          <div className="h-px w-12 lg:w-24 bg-zinc-400" />
+          <h3 className="font-medium text-zinc-400 text-md lg:text-xl">
+            {post?.title}
+          </h3>
         </div>
 
-        <a
-          href={post?.url}
-          className="text-zinc-400 text-xl transition-all duration-150 easy-linear hover:text-zinc-500"
-        >
-          Read the full article
-        </a>
+        <div className="hidden lg:flex">
+          <a
+            href={post?.url}
+            className="text-zinc-400 text-md lg:text-xl transition-all duration-150 easy-linear hover:text-zinc-500"
+          >
+            Read the full article
+          </a>
+        </div>
       </div>
     </div>
   );
