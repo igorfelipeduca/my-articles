@@ -48,6 +48,8 @@ export default function Post({ post }: { post: TPost }) {
         <a
           href={post?.url}
           className="pt-px w-24 h-7 flex justify-center align-center transition-all text-zinc-500 duration-150 ease-linear hover:bg-gray-300 bg-gray-200 rounded-full shadow-inner"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Read{" "}
         </a>
