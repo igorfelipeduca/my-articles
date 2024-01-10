@@ -57,7 +57,7 @@ export default function Post({ post }: { post: TPost }) {
         <Image
           src={post?.cover_image}
           alt="image"
-          className="w-full h-auto aspect-video rounded-none"
+          className="w-full h-auto aspect-video rounded-none object-cover"
         />
       </div>
     </div>
