@@ -39,7 +39,7 @@ export type TPost = {
 
 export default function Post({ post }: { post: TPost }) {
   return (
-    <div className="w-[42rem]">
+    <div className="w-[22rem] lg:w-[42rem]">
       <div className="w-full flex justify-between">
         <div className="text-zinc-500 text-xl font-medium max-w-[30rem] truncate">
           {post?.title}
