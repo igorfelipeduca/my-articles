@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import Navbar from "@/components/navbar";
 
 export const metadata = {
+  title: "Articles",
+  description: "Articles by Igor F. Duca",
   openGraph: {
     title: "Articles",
     description: "Articles by Igor F. Duca",
