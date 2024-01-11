@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  env: {
+    DEVTO_USERNAME: "yelldutz",
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
