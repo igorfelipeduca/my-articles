@@ -55,13 +55,13 @@ export default function Post({ post }: { post: TPost }) {
         </a>
       </div>
 
-      <div className="w-full mt-4">
+      <a href={post?.url} className="w-full mt-4">
         <Image
           src={post?.cover_image}
           alt="image"
           className="w-full h-auto aspect-video rounded-none object-cover"
         />
-      </div>
+      </a>
     </div>
   );
 }
