@@ -1,6 +1,6 @@
 ## My-Articles
 
-![preview]('/public/full-preview.png')
+![preview](/public/full-preview.png)
 
 This is a template repository crated for the purpose of showcasing your articles from a pretty website, running away from those boring pages we are used to see.
 
