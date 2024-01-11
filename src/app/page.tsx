@@ -6,15 +6,17 @@ import Post, { TPost } from "@/components/post";
 import HighlightParagraph from "@/components/highlightParagraph";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 export default function Home() {
   const [posts, setPosts] = useState<TPost[]>([]);
 
   useEffect(() => {
     axios
-      .get("https://dev.to/api/articles?username=yelldutz")
+      .get(`https://dev.to/api/articles?username=${process.env.DEVTO_USERNAME}`)
       .then((response) => {
-        console.log({ data: response.data });
         setPosts(response.data);
       });
   }, []);
