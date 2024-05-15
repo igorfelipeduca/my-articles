@@ -1,0 +1,22 @@
+.article h1,
+h2,
+h3,
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.article img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.article h2 {
+  font-size: 30px;
+}
+
+.article {
+  font-size: 18px;
+  color: #3f3f46;
+}

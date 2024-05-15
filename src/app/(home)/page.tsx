@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import icon from "../assets/icon.svg";
+import icon from "../../assets/icon.svg";
 import Post, { TPost } from "@/components/post";
 import HighlightParagraph from "@/components/highlightParagraph";
 import { useEffect, useState } from "react";

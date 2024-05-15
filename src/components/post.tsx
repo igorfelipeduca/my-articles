@@ -25,6 +25,8 @@ export type TPost = {
   reading_time_minutes: number;
   tag_list: string[];
   tags: string;
+  body_markdown: string;
+  body_html: string;
   user: {
     name: string;
     username: string;
@@ -39,14 +41,14 @@ export type TPost = {
 
 export default function Post({ post }: { post: TPost }) {
   return (
-    <div className="w-[22rem] lg:w-[42rem]">
-      <div className="w-full flex justify-between">
+    <div className="w-auto">
+      <div className="max-w-lg flex justify-between">
         <div className="text-zinc-500 text-lg lg:text-xl font-medium max-w-[30rem] truncate">
           {post?.title}
         </div>
 
         <a
-          href={post?.url}
+          href={`/${post.id}`}
           className="pt-px w-24 h-7 flex justify-center align-center transition-all text-zinc-500 duration-150 ease-linear hover:bg-gray-300 bg-gray-200 rounded-full shadow-inner"
           target="_blank"
           rel="noopener noreferrer"
@@ -59,7 +61,7 @@ export default function Post({ post }: { post: TPost }) {
         <Image
           src={post?.cover_image}
           alt="image"
-          className="w-full h-auto aspect-video rounded-none object-cover mt-8"
+          className="w-full h-56 lg:h-72 aspect-video rounded-none object-cover mt-8"
         />
       </a>
     </div>
